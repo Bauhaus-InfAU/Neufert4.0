@@ -1,7 +1,7 @@
 # Apartment affordance model
 
-The `affordance_model.py` script reads in data and trains a DNN model, saving the model parameters.
-In order to sun correctly, it needs to be placed in a `scripts` folder inside the following folder structure:
+The `scripts/affordance_model.py` script reads in data and trains a DNN model, saving the model parameters.
+In order to sun correctly, it needs to be placed in the following folder structure:
 
 ```
 - scripts
