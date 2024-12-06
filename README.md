@@ -1,7 +1,7 @@
 # Neufert 4.0 Project
 
 ![Neufert Overview](Main.gif)
-*Figure 1: Generative AI for residential design in action
+*Figure 1: Generative AI for residential design in action.*
 
 # Project Description
 The "Neufert 4.0" project adapts innovative methods of artificial intelligence to derive design heuristics from an extensive database of existing apartment floor plans. The aim is to provide architects and planners with tools that efficiently support the design of residential buildings that are suitable for use. The basis of the project is a comprehensive collection of approx. 35,000 apartment floor plans. These floor plans contain not only geometric data, but also detailed semantic information on the individual components, room types and the urban environment. In addition, experience and use - related aspects such as daylight, visual relationships and spatial contexts are taken into account. 
@@ -38,11 +38,11 @@ The entire codebase for the project is available on GitHub:
 # Design Heuristic A - Affordance Prediction
 **Goals**: Assess the potential residential quality of a given outline to support architects in the early design phase. Specifically, the heuristic aims to predict qualities such as daylight availability, spatial relationships, and overall usability based on the geometry of the floor plan.
 
-
+<p align="center">
 <img src="Affordance.svg" alt="Design Heuristic Affordance - Overview" width="1024x">
 <br>
-*Figure 2: Inputs and Outputs for the Affordance Design Heuristic*<br><br>
-
+<em>Figure 2: Inputs and Outputs for the Affordance Design Heuristic.<em><br><br>
+</p>
 
 **Method**: A Convolutional Neural Network (CNN) architecture was used to train models on the geometric and semantic features of floor plans. The model architecture included multiple convolutional layers to extract spatial features, followed by fully connected layers to make predictions on residential qualities. The training process involved supervised learning, using labeled data with predefined residential quality metrics. Transfer learning was also applied to leverage pre-trained models for better generalization.
 
@@ -50,8 +50,19 @@ The entire codebase for the project is available on GitHub:
 - The heuristic effectively predicts qualities such as daylight availability and spatial relationships.
 - Users found the heuristic helpful for identifying early-stage optimization opportunities.
 
+<p align="center">
+<img src="Affordance.gif" alt="Design Heuristic Affordance - Application" width="1024x">
+<em>Figure 2: Affordance Design Heuristic in action.</em><br><br>
+</p>
+
 # Design Heuristic B - Search
 **Goals**: Enable architects to efficiently find similar existing floor plans that match a given outline. The aim is to provide a reference for proven spatial concepts that can guide the design process.
+
+<p align="center">
+<img src="Search.svg" alt="Design Search - Overview" width="1024x">
+<br>
+<em>Figure 2: Inputs and Outputs for Floor Plan Search.<em><br><br>
+</p>
 
 **Method**: To address the limitations of previous approaches, we adapted our methodology. Instead of using graph embeddings, we computed Hu's moment invariants for each floor plan polygon [Hu, 1962]. These seven real numbers, derived from image moments, are commonly used in pattern recognition for their invariance to translation, scaling, and, except for the sign of the last invariant, reflection. Using a simple log transformation:
 
@@ -67,9 +78,20 @@ where \( h_i \) is the i-th moment invariant, allowed us to place these moment i
 - **User Feedback**:
   - Placing the selected floor plan in Rhino.
   - Closing FloorAI and zooming in on the chosen layout.
+ 
+<p align="center">
+<img src="Search.gif" alt="Design Search - Application" width="1024x">
+<em>Figure 2: Design Search in action - Looking for matching floorplans.</em><br><br>
+</p>
 
 # Design Heuristic C - Generate
 **Goals**: Generate new floor plan designs by adjusting key spatial parameters. This heuristic aims to support creative exploration by providing architects with multiple layout options based on user-defined constraints.
+
+<p align="center">
+<img src="Generation.svg" alt="Generative Design Heuristic - Overview" width="1024x">
+<br>
+<em>Figure 2: Inputs and Outputs for Floor Plan Generation.<em><br><br>
+</p>
 
 **Method**: A diffusion-based generative model was employed to suggest new layouts. The model first generates a room layout, which is then refined to include walls, doors, and windows. The architecture of the generative model includes an initial noise-based diffusion process, followed by a denoising step that produces the final layout. The model was trained on the cleaned dataset of 35,000 floor plans, with conditioning on key parameters such as the number of rooms, room sizes, and connectivity requirements.
 
@@ -79,3 +101,8 @@ where \( h_i \) is the i-th moment invariant, allowed us to place these moment i
 - **User Feedback**:
   - Selecting two floor plans and modifying the number of rooms.
   - Placing the selected floor plans in Rhino, zooming in, and closing FloorAI.
+ 
+<p align="center">
+<img src="Generation.gif" alt="Generative Design Heuristic - Application" width="1024x">
+<em>Figure 2: Using ControlNet to generate new floor plans.</em><br><br>
+</p>
