@@ -1,0 +1,8 @@
+numpy==1.25.0
+scikit-learn==1.2.2
+shapely==2.0.1
+statistics
+collection
+torch==2.0.1
+opencv-python==4.8.0.74
+torch-geometric==2.4.0

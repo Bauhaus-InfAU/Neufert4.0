@@ -1,0 +1,7 @@
+numpy==1.25.0
+opencv-python==4.8.0.74
+diffusers == 0.24.0
+torch==2.0.1
+accelerate == 0.25.0
+transformers
+gradio-client == 0.17.0
