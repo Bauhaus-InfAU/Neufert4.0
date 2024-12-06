@@ -98,7 +98,7 @@ where \( h_i \) is the i-th moment invariant, allowed us to place these moment i
 **Goals**: Generate new floor plan designs by adjusting key spatial parameters. This heuristic aims to support creative exploration by providing architects with multiple layout options based on user-defined constraints.
 
 <p align="center">
-<img src="Generation.svg" alt="Generative Design Heuristic - Overview" width="1024x">
+<img src="Generate.svg" alt="Generative Design Heuristic - Overview" width="1024x">
 <br>
 <em>Figure 2: Inputs and Outputs for Floor Plan Generation.<em><br><br>
 </p>
