@@ -22,18 +22,28 @@ Bauhaus University Weimar: Dr. Sven Schneider, Dr. Martin Bielik, Luyang Zhang, 
 Archilyse AG: Dr. Matthias Standfest, Michael Franzen
 
 
-**Key Project Resources**:
-- [Link to Full Report](#)
-- **FloorAI Platform**: An interactive tool that allows users to explore the project's outputs.
+For detailed information see:
+[Link to Full Report](#)
+
 
 ## Dataset
-The dataset, provided by Archilyse AG, contains geometric and semantic information about 35,000 apartments. A data-cleaning procedure was carried out to ensure consistency and quality, involving the exclusion of apartments with incomplete or inaccurate data.
+The dataset, provided by Archilyse AG, contains geometric and semantic information about 35,000 apartments. 
+
+Data-cleaning procedure was carried out to ensure consistency and quality, involving the exclusion of apartments with incomplete or inaccurate data.
+Curated version of the data set can be found here:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14223942.svg)](https://doi.org/10.5281/zenodo.14223942)
 
 ## Codebase
 The entire codebase for the project is available on GitHub:
 - [Bauhaus-InfAU/Neufert4.0](https://github.com/Bauhaus-InfAU/Neufert4.0)
+
+## Publications
+Bielik, M., Zhang, L., Schneider, S. (2023). *Big Data, Good Data, and Residential Floor Plans*. In: Turrin, M., Andriotis, C., Rafiee, A. (eds) Computer-Aided Architectural Design. INTERCONNECTIONS: Co-computing Beyond Boundaries. CAAD Futures 2023. Communications in Computer and Information Science, vol 1819. Springer, Cham. [https://doi.org/10.1007/978-3-031-37189-9_40](https://doi.org/10.1007/978-3-031-37189-9_40)
+
+
+<br><br><br><br>
+
 
 # Design Heuristic A - Affordance Prediction
 **Goals**: Assess the potential residential quality of a given outline to support architects in the early design phase. Specifically, the heuristic aims to predict qualities such as daylight availability, spatial relationships, and overall usability based on the geometry of the floor plan.
