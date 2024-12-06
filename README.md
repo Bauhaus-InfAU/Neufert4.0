@@ -39,8 +39,10 @@ The entire codebase for the project is available on GitHub:
 **Goals**: Assess the potential residential quality of a given outline to support architects in the early design phase. Specifically, the heuristic aims to predict qualities such as daylight availability, spatial relationships, and overall usability based on the geometry of the floor plan.
 
 
-![Design Heuristic Affordance - Overview](Affordance.svg)
-*Figure 2: Inputs and Outputs for the Affordance Design Heuristic*
+<img src="Affordance.svg" alt="Design Heuristic Affordance - Overview" width="1024x">
+<br>
+*Figure 2: Inputs and Outputs for the Affordance Design Heuristic*<br><br>
+
 
 **Method**: A Convolutional Neural Network (CNN) architecture was used to train models on the geometric and semantic features of floor plans. The model architecture included multiple convolutional layers to extract spatial features, followed by fully connected layers to make predictions on residential qualities. The training process involved supervised learning, using labeled data with predefined residential quality metrics. Transfer learning was also applied to leverage pre-trained models for better generalization.
 
