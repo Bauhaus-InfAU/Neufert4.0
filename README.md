@@ -1,4 +1,4 @@
-# Neufert 4.0 Project Website
+# Neufert 4.0 Project
 
 ## Project Description
 The "Neufert 4.0" project adapts innovative methods of artificial intelligence to derive design heuristics from an extensive database of existing apartment floor plans. The aim is to provide architects and planners with tools that efficiently support the design of residential buildings that are suitable for use. The basis of the project is a comprehensive collection of approx. 35,000 apartment floor plans. These floor plans contain not only geometric data, but also detailed semantic information on the individual components, room types and the urban environment. In addition, experience and use - related aspects such as daylight, visual relationships and spatial contexts are taken into account. 
