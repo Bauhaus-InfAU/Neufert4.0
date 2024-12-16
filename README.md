@@ -17,7 +17,8 @@ Federal Institute for Research on Building, Urban Affairs and Spatial Developmen
 ### Duration: 
 April 2022 - November 2024
 ### Team:
-Bauhaus University Weimar: Dr. Sven Schneider, Dr. Martin Bielik, Luyang Zhang, Dr. Milan Valášek 
+[Bauhaus University Weimar - Chair of Computer Science in Architecture and Urbanism](https://www.uni-weimar.de/en/architecture-and-urbanism/chairs/infau/news/): 
+Dr. Sven Schneider, Dr. Martin Bielik, Luyang Zhang, Dr. Milan Valášek 
 
 Archilyse AG: Dr. Matthias Standfest, Michael Franzen
 
